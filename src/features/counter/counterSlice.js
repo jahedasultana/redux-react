@@ -15,8 +15,11 @@ reducers: {
    reset: state => {
     state.count = 0
    },
+   incrementByNumbers: (state, action) => {
+    state.count = state.count + action.payload
+   }
 }
 });
 
-export const {increment, decrement, reset} = counterSlice.actions;
+export const {increment, decrement, reset, incrementByNumbers} = counterSlice.actions;
 export default counterSlice.reducer;
