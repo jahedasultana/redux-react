@@ -1,6 +1,7 @@
 
 import './App.css'
 import CounterView from './features/counter/counterView'
+import PostsView from './posts/PostsView'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
  
      <CounterView/>
-  
+    <PostsView></PostsView>
     </>
   )
 }
